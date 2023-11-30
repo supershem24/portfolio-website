@@ -6,6 +6,7 @@
 
 header{
     display: flex;
+    position: sticky;
     background-color: #00ff21;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +19,19 @@ nav{
 main{
     display: flex;
     flex-direction: column;
+    margin: 50px 50px;
 }
 
 section{
-    backround-color: #ff0000;
+    background-color: #ff0000;
+}
+
+#Title{
+    background-color: #808080;
+    border-block-end-style: ridge;
+    text-align: center;
+}
+
+#Title h1{
+    font-size: 2em;
 }
