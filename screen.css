@@ -1,7 +1,7 @@
-﻿body
-{
+﻿body {
     margin: 0;
     padding: 0;
+    background-color: #00ffff;
 }
 
 header{
@@ -19,11 +19,14 @@ nav{
 main{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     margin: 50px 50px;
 }
 
 section{
+    display: flex;
     background-color: #ff0000;
+    justify-content: space-around;
 }
 
 #Title{
@@ -34,4 +37,35 @@ section{
 
 #Title h1{
     font-size: 2em;
+}
+
+.ImageHolder {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.ImageHolder div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.ImageHolder::-webkit-scrollbar{
+    display: none;
+}
+
+.RightButton{
+
+}
+
+.LeftButton{
+
+}
+
+.BigImage{
+    block-size: 200px;
 }
