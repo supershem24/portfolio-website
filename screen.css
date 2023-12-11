@@ -1,71 +1,132 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background-color: #00ffff;
+    background-color: #5779F0;
 }
 
-header{
+header {
     display: flex;
     position: sticky;
-    background-color: #00ff21;
+    top: 0;
+    background-color: #4AEF5A;
     justify-content: space-between;
     align-items: center;
 }
 
-nav{
-    color: #ffffff;
+h2{
+    padding: 0 20px;
 }
 
-main{
+nav {
+    padding: 0 20px;
+    flex-grow: 2;
+    display: flex;
+    color: #ffffff;
+    justify-content: flex-start;
+}
+
+nav a{
+    padding: 20px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+main {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin: 50px 50px;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0 20px;
+    background-color: #E5F1EE;
 }
 
-section{
+h3 {
+    background-color: #E5F1EE;
+    width: 100%;
+    margin: 0;
+}
+
+section {
     display: flex;
-    background-color: #ff0000;
+    background-color: #D9D9D9;
     justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 20px 20px;
 }
 
-#Title{
-    background-color: #808080;
+#Title {
+    display: flex;
+    background-color: #D9D9D9;
     border-block-end-style: ridge;
+    flex-direction: column;
     text-align: center;
+    margin: 20px 0;
+    padding: 30px;
 }
 
 #Title h1{
-    font-size: 2em;
+    font-size: 3em;
+}
+
+#Title p{
+    font-size: 1.5em;
 }
 
 .ImageHolder {
-    width: 100%;
+    width: 85%;
+    order: 2;
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
 }
 
-.ImageHolder div{
-    width: 100%;
+.ImageHolder div {
+    width: 98%;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
-    padding: 10px;
+    padding: 1%;
+    margin: 0;
+    flex: none;
+}
+
+.ImageHolder div img{
+    width: 100%;
 }
 
 .ImageHolder::-webkit-scrollbar{
     display: none;
 }
 
-.RightButton{
-
+.ImageHolder a{
+    color: #000000;
+    text-decoration: none;
 }
 
-.LeftButton{
-
+.LeftButton {
+    width: 5%;
+    order: 1;
 }
 
-.BigImage{
-    block-size: 200px;
+.RightButton {
+    width: 5%;
+    order: 3;
+}
+
+.LeftButton:hover {
+    transform: scale(1.1);
+}
+
+.RightButton:hover {
+    transform: scale(1.1);
+}
+
+p{
+    padding: 0 20px;
+    font-size: 1em;
+}
+
+audio{
+    width: 100%;
 }
